@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 1px red solid; */
+}
+
+/*Main Container*********************************/
+.body-container {
+    width: 390px;
+    height: 100%;
+    font-family: "calibri", sans-serif;
+    background-image: url("./images/Final_Background_20.gif");
+    background-size: cover;
+}
+/***********************************************/
+
+/*Header Container******************************/
+.header-container {
+    text-align: center;
+    padding: 30px 0px 30px 0px; /*padding on the top and bottom of the header*/
+}
+.header-title {
+    color: white;
+    font-family: "sofia";
+    font-size: 22px;
+    padding: 10px;
+    resize: none;
+    margin: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: rgba(31, 21, 145, 0.8);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+.header-title-image {
+    height: 3rem;
+}
+.header-tagline {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    font-size: 17px;
+    font-family: "calibri";
+    font-style: italic;
+}
+
+/************************USER ID INPUT***********************/
+
+/*Questions Written Section*/
+.user-section {
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+/*Questions Written Block-- Start of a Written Block*/
+.user-block {
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(31, 21, 145, 0.3);
+    padding: 12px;
+    color: white;
+}
+
+/*Questions Written Block Prompt*/
+.user-block-prompt {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/*Questions Written Block Textarea*/
+.user-block-textarea {
+}
+/*Written Block input field*/
+.user-block-textarea textarea {
+    width: 97%;
+    background-color: white;
+    opacity: 90%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    resize: none;
+}
+
+/************************QUESTIONS***********************/
+
+/*Questions Container***************************/
+.qs-container {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+/*Questions Emojis Section*/
+.qs-emojis-section {
+    display: grid;
+    width: 100%;
+    grid-row-gap: 30px;
+    grid-auto-rows: minmax(30px, auto);
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10%;
+    padding-top: 1rem;
+}
+
+.qs-emojis-text {
+    grid-column: 1/5;
+    width: 100%;
+    /* The code below for the purple containers is applied separately for the rest of the questions in qs-written-block.
+    Make sure they match up. */
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(31, 21, 145, 0.3);
+    padding: 12px;
+    color: white;
+}
+
+.qs-emojis-five-icon-collection {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    padding-bottom: 3rem;
+}
+
+.qs-emojis-icon-images {
+    height: auto;
+    width: 20%;
+    /* border: 1px solid blue; /*DEV ONLY, TO COMMENT OUT*/
+}
+
+.qs-emojis-icon-images-file {
+    width: 31px; /* This is needed to ensure the icons don't overrun their boxes */
+}
+
+.emoji-1 {
+}
+
+/*Questions Written Section*/
+.qs-written-section {
+    grid-template-columns: 100%;
+    display: grid;
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    /* border: 10px solid black; /*DEV ONLY, TO COMMENT OUT*/
+}
+/*Questions Written Block-- Start of a Written Block*/
+.qs-written-block {
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(31, 21, 145, 0.3);
+    padding: 12px;
+    color: white;
+    /*border: 5px solid blue; /*DEV ONLY, TO COMMENT OUT*/
+}
+
+/*Questions Written Block Prompt*/
+.qs-written-block-prompt {
+    margin-bottom: 10px;
+}
+/*Questions Written Block Textarea*/
+.qs-written-block-textarea {
+}
+/*Written Block input field*/
+.qs-written-block-textarea textarea {
+    width: 97%;
+    background-color: white;
+    opacity: 90%;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    resize: none;
+}
+/*End of a Written Block************************/
+/***********************************************/
+
+/*Questions Button Section*/
+
+.qs-container-button {
+    background-color: rgb(219, 203, 31);
+    color: rgba(31, 21, 145, 0.8);
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px 20px;
+    border: solid rgb(219, 203, 31);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(27, 249, 49);
+    cursor: pointer;
+    font-weight: bold;
+}
+/*Journal Section******************************/
+.journal-section {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-row-gap: 30px;
+
+    padding: 15px;
+    /*  border: 10px solid black; /*DEV ONLY, TO COMMENT OUT*/
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 30px;
+}
+/*Journal Title*/
+.journal-title {
+    text-shadow: 0 0 10px rgba(31, 21, 145, 1);
+    color: white;
+    font-family: "Sofia";
+    font-size: 22px;
+    /*   border: 2px solid rgba(0, 0, 0, 0.2); */
+    /* border-radius: 10px;*/
+    padding: 0px 10px 0px 10px;
+    /*   box-shadow: 0 0 10px rgba(255, 255, 255, 1.5); */
+    resize: none;
+    font-size: 25px;
+    text-align: center;
+    width: 100%;
+}
+/*Journal Day Block*/
+.journal-day-block {
+    opacity: 90%;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(31, 21, 145, 0.4);
+    padding: 12px;
+    /*   border: 5px solid blue; /*DEV ONLY, TO COMMENT OUT*/
+}
+
+.journal-day-date {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.journal-day-questions {
+    font-size: 12px;
+    font-style: italics;
+    font-weight: bold;
+    color: rgb(219, 203, 31);
+    padding-bottom: 1rem;
+}
+
+.journal-day-emoji-container {
+    margin-left: 43%; /*centres the emoji that will be produced within in JS*/
+}
+.journal-day-answer-emoji-1 {
+    scale: 10%;
+    display: none;
+}
+
+.journal-day-text {
+    font-size: 12px;
+    text-indent: 15px; /*indents first line of responses */
+    color: white;
+}
+
+.journal-day-text::first-letter {
+    font-weight: bold;
+}
+
+.journal-day-question-divider {
+    font-weight: bold;
+    text-align: center;
+}
+
+.journal-day-divider {
+    color: rgb(219, 203, 31);
+    font-weight: bold;
+    text-align: center;
+}
+/***********************************************/
+
+/*PopUp Notification****************************/
+.popup-notification {
+    position: absolute;
+    top: -25px;
+    right: -16px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.popup {
+    width: 235px;
+    height: 45px;
+    padding-left: 10px;
+    background-color: rgba(228, 226, 226, 0.7);
+    font-weight: 500;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+    transform: translateX(100%);
+    animation: popup-movein 0.4s linear forwards;
+}
+
+.popup::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(56, 214, 56);
+    animation: popup-animate 3s linear forwards;
+}
+
+/*keyframes**************************************/
+
+@keyframes popup-movein {
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes popup-animate {
+    100% {
+        width: 0;
+    }
+}
